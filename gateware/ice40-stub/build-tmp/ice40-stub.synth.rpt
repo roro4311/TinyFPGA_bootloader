@@ -1,0 +1,1490 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Xenia Wolf <claire@yosyshq.com>         |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.10+12 (open-tool-forge build) (git sha1 356ec7bb, clang 11.0.3 )
+
+
+-- Executing script file `/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/build-tmp/ice40-stub.ys' --
+
+1. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v' to AST representation.
+Generating RTLIL representation for module `\top'.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/delay.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/delay.v' to AST representation.
+Generating RTLIL representation for module `\delay_bit'.
+Generating RTLIL representation for module `\delay_bus'.
+Warning: Replacing memory \dl with list of registers. See /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/delay.v:59
+Generating RTLIL representation for module `\delay_toggle'.
+Successfully finished Verilog frontend.
+
+3. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/fifo_sync_ram.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/fifo_sync_ram.v' to AST representation.
+Generating RTLIL representation for module `\fifo_sync_ram'.
+Successfully finished Verilog frontend.
+
+4. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/fifo_sync_shift.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/fifo_sync_shift.v' to AST representation.
+Generating RTLIL representation for module `\fifo_sync_shift'.
+Successfully finished Verilog frontend.
+
+5. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v' to AST representation.
+Generating RTLIL representation for module `\glitch_filter'.
+Successfully finished Verilog frontend.
+
+6. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/i2c_master.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/i2c_master.v' to AST representation.
+Generating RTLIL representation for module `\i2c_master'.
+Successfully finished Verilog frontend.
+
+7. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/i2c_master_wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/i2c_master_wb.v' to AST representation.
+Generating RTLIL representation for module `\i2c_master_wb'.
+Successfully finished Verilog frontend.
+
+8. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/muacm2wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/muacm2wb.v' to AST representation.
+Generating RTLIL representation for module `\muacm2wb'.
+Successfully finished Verilog frontend.
+
+9. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v' to AST representation.
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:31) is not recognized unless read_verilog is called with -sv!
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:75) is not recognized unless read_verilog is called with -sv!
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:117) is not recognized unless read_verilog is called with -sv!
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:150) is not recognized unless read_verilog is called with -sv!
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:186) is not recognized unless read_verilog is called with -sv!
+Lexer warning: The SystemVerilog keyword `bit' (at /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/prims.v:237) is not recognized unless read_verilog is called with -sv!
+Generating RTLIL representation for module `\lut4_n'.
+Generating RTLIL representation for module `\lut4_carry_n'.
+Generating RTLIL representation for module `\dff_n'.
+Generating RTLIL representation for module `\dffe_n'.
+Generating RTLIL representation for module `\dffer_n'.
+Generating RTLIL representation for module `\dffesr_n'.
+Successfully finished Verilog frontend.
+
+10. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pdm.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pdm.v' to AST representation.
+Warning: Yosys has only limited support for tri-state logic at the moment. (/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pdm.v:91)
+Generating RTLIL representation for module `\pdm'.
+Generating RTLIL representation for module `\pdm_lfsr'.
+Successfully finished Verilog frontend.
+
+11. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pwm.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pwm.v' to AST representation.
+Warning: Yosys has only limited support for tri-state logic at the moment. (/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/pwm.v:69)
+Generating RTLIL representation for module `\pwm'.
+Successfully finished Verilog frontend.
+
+12. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/ram_sdp.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/ram_sdp.v' to AST representation.
+Generating RTLIL representation for module `\ram_sdp'.
+Successfully finished Verilog frontend.
+
+13. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/stream2wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/stream2wb.v' to AST representation.
+Generating RTLIL representation for module `\stream2wb'.
+Successfully finished Verilog frontend.
+
+14. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart2wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart2wb.v' to AST representation.
+Generating RTLIL representation for module `\uart2wb'.
+Successfully finished Verilog frontend.
+
+15. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_rx.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_rx.v' to AST representation.
+Generating RTLIL representation for module `\uart_rx'.
+Successfully finished Verilog frontend.
+
+16. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_tx.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_tx.v' to AST representation.
+Generating RTLIL representation for module `\uart_tx'.
+Successfully finished Verilog frontend.
+
+17. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/uart_wb.v' to AST representation.
+Generating RTLIL representation for module `\uart_wb'.
+Successfully finished Verilog frontend.
+
+18. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/xclk_strobe.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/xclk_strobe.v' to AST representation.
+Generating RTLIL representation for module `\xclk_strobe'.
+Successfully finished Verilog frontend.
+
+19. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/xclk_wb.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/xclk_wb.v' to AST representation.
+Generating RTLIL representation for module `\xclk_wb'.
+Successfully finished Verilog frontend.
+
+20. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/codec_fix.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/codec_fix.v' to AST representation.
+Generating RTLIL representation for module `\codec_fix'.
+Successfully finished Verilog frontend.
+
+21. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/flash_lock.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/flash_lock.v' to AST representation.
+Generating RTLIL representation for module `\flash_lock'.
+Successfully finished Verilog frontend.
+
+22. Executing Verilog-2005 frontend: /Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/led_flasher.v
+Parsing Verilog input from `/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/led_flasher.v' to AST representation.
+Generating RTLIL representation for module `\led_flasher'.
+Successfully finished Verilog frontend.
+
+23. Executing SYNTH_ICE40 pass.
+
+23.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v' to AST representation.
+Generating RTLIL representation for module `\SB_IO'.
+Generating RTLIL representation for module `\SB_GB_IO'.
+Generating RTLIL representation for module `\SB_GB'.
+Generating RTLIL representation for module `\SB_LUT4'.
+Generating RTLIL representation for module `\SB_CARRY'.
+Generating RTLIL representation for module `\SB_DFF'.
+Generating RTLIL representation for module `\SB_DFFE'.
+Generating RTLIL representation for module `\SB_DFFSR'.
+Generating RTLIL representation for module `\SB_DFFR'.
+Generating RTLIL representation for module `\SB_DFFSS'.
+Generating RTLIL representation for module `\SB_DFFS'.
+Generating RTLIL representation for module `\SB_DFFESR'.
+Generating RTLIL representation for module `\SB_DFFER'.
+Generating RTLIL representation for module `\SB_DFFESS'.
+Generating RTLIL representation for module `\SB_DFFES'.
+Generating RTLIL representation for module `\SB_DFFN'.
+Generating RTLIL representation for module `\SB_DFFNE'.
+Generating RTLIL representation for module `\SB_DFFNSR'.
+Generating RTLIL representation for module `\SB_DFFNR'.
+Generating RTLIL representation for module `\SB_DFFNSS'.
+Generating RTLIL representation for module `\SB_DFFNS'.
+Generating RTLIL representation for module `\SB_DFFNESR'.
+Generating RTLIL representation for module `\SB_DFFNER'.
+Generating RTLIL representation for module `\SB_DFFNESS'.
+Generating RTLIL representation for module `\SB_DFFNES'.
+Generating RTLIL representation for module `\SB_RAM40_4K'.
+Generating RTLIL representation for module `\SB_RAM40_4KNR'.
+Generating RTLIL representation for module `\SB_RAM40_4KNW'.
+Generating RTLIL representation for module `\SB_RAM40_4KNRNW'.
+Generating RTLIL representation for module `\ICESTORM_LC'.
+Generating RTLIL representation for module `\SB_PLL40_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2_PAD'.
+Generating RTLIL representation for module `\SB_PLL40_2F_CORE'.
+Generating RTLIL representation for module `\SB_PLL40_2F_PAD'.
+Generating RTLIL representation for module `\SB_WARMBOOT'.
+Generating RTLIL representation for module `\SB_SPRAM256KA'.
+Generating RTLIL representation for module `\SB_HFOSC'.
+Generating RTLIL representation for module `\SB_LFOSC'.
+Generating RTLIL representation for module `\SB_RGBA_DRV'.
+Generating RTLIL representation for module `\SB_LED_DRV_CUR'.
+Generating RTLIL representation for module `\SB_RGB_DRV'.
+Generating RTLIL representation for module `\SB_I2C'.
+Generating RTLIL representation for module `\SB_SPI'.
+Generating RTLIL representation for module `\SB_LEDDA_IP'.
+Generating RTLIL representation for module `\SB_FILTER_50NS'.
+Generating RTLIL representation for module `\SB_IO_I3C'.
+Generating RTLIL representation for module `\SB_IO_OD'.
+Generating RTLIL representation for module `\SB_MAC16'.
+Generating RTLIL representation for module `\ICESTORM_RAM'.
+Successfully finished Verilog frontend.
+
+23.2. Executing HIERARCHY pass (managing design hierarchy).
+
+23.2.1. Analyzing design hierarchy..
+Top module:  \top
+Used module:     \glitch_filter
+Parameter \L = 4
+
+23.2.2. Executing AST frontend in derive mode using pre-parsed AST for module `\glitch_filter'.
+Parameter \L = 4
+Generating RTLIL representation for module `$paramod\glitch_filter\L=s32'00000000000000000000000000000100'.
+
+23.2.3. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod\glitch_filter\L=s32'00000000000000000000000000000100
+
+23.2.4. Analyzing design hierarchy..
+Top module:  \top
+Used module:     $paramod\glitch_filter\L=s32'00000000000000000000000000000100
+Removing unused module `\led_flasher'.
+Removing unused module `\flash_lock'.
+Removing unused module `\codec_fix'.
+Removing unused module `\xclk_wb'.
+Removing unused module `\xclk_strobe'.
+Removing unused module `\uart_wb'.
+Removing unused module `\uart_tx'.
+Removing unused module `\uart_rx'.
+Removing unused module `\uart2wb'.
+Removing unused module `\stream2wb'.
+Removing unused module `\ram_sdp'.
+Removing unused module `\pwm'.
+Removing unused module `\pdm_lfsr'.
+Removing unused module `\pdm'.
+Removing unused module `\dffesr_n'.
+Removing unused module `\dffer_n'.
+Removing unused module `\dffe_n'.
+Removing unused module `\dff_n'.
+Removing unused module `\lut4_carry_n'.
+Removing unused module `\lut4_n'.
+Removing unused module `\muacm2wb'.
+Removing unused module `\i2c_master_wb'.
+Removing unused module `\i2c_master'.
+Removing unused module `\glitch_filter'.
+Removing unused module `\fifo_sync_shift'.
+Removing unused module `\fifo_sync_ram'.
+Removing unused module `\delay_bus'.
+Removing unused module `\delay_bit'.
+Removed 28 unused modules.
+
+23.3. Executing PROC pass (convert processes to netlists).
+
+23.3.1. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Cleaned up 0 empty switches.
+
+23.3.2. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630 in module SB_DFFNER.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1159$623 in module SB_DFFNESR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1090$620 in module SB_DFFNS.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1042$617 in module SB_DFFNSS.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:973$614 in module SB_DFFNR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:925$611 in module SB_DFFNSR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603 in module SB_DFFES.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:713$596 in module SB_DFFESS.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592 in module SB_DFFER.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:582$585 in module SB_DFFESR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:513$582 in module SB_DFFS.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:465$579 in module SB_DFFSS.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:396$576 in module SB_DFFR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:348$573 in module SB_DFFSR.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797 in module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+Marked 3 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:80$793 in module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:70$789 in module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+Marked 2 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:60$781 in module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641 in module SB_DFFNES.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1290$634 in module SB_DFFNESS.
+Marked 2 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14 in module top.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:231$13 in module top.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:174$6 in module top.
+Marked 1 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:164$5 in module top.
+Marked 6 switch rules as full_case in process $proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:123$1 in module top.
+Removed a total of 0 dead cases.
+
+23.3.3. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+Removed 15 redundant assignments.
+Promoted 25 assignments to connections.
+
+23.3.4. Executing PROC_INIT pass (extract init attributes).
+Found init rule in `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$633'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$629'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$622'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$619'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$616'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$613'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$610'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$608'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$606'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$602'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$595'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$591'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$584'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$581'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$578'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$575'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$572'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$570'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$644'.
+  Set init value: \Q = 1'0
+Found init rule in `\SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$640'.
+  Set init value: \Q = 1'0
+
+23.3.5. Executing PROC_ARST pass (detect async resets in processes).
+Found async reset \R in `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630'.
+Found async reset \S in `\SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1090$620'.
+Found async reset \R in `\SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:973$614'.
+Found async reset \S in `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603'.
+Found async reset \R in `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592'.
+Found async reset \S in `\SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:513$582'.
+Found async reset \R in `\SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:396$576'.
+Found async reset \S in `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641'.
+Found async reset \rst in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14'.
+Found async reset \rst in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:231$13'.
+Found async reset \rst in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:164$5'.
+
+23.3.6. Executing PROC_MUX pass (convert decision trees to multiplexers).
+Creating decoders for process `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$633'.
+Creating decoders for process `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$629'.
+Creating decoders for process `\SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1159$623'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$622'.
+Creating decoders for process `\SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1090$620'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$619'.
+Creating decoders for process `\SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1042$617'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$616'.
+Creating decoders for process `\SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:973$614'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$613'.
+Creating decoders for process `\SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:925$611'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$610'.
+Creating decoders for process `\SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:882$609'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$608'.
+Creating decoders for process `\SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:846$607'.
+Creating decoders for process `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$606'.
+Creating decoders for process `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$602'.
+Creating decoders for process `\SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:713$596'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$595'.
+Creating decoders for process `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$591'.
+Creating decoders for process `\SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:582$585'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$584'.
+Creating decoders for process `\SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:513$582'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$581'.
+Creating decoders for process `\SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:465$579'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$578'.
+Creating decoders for process `\SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:396$576'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$575'.
+Creating decoders for process `\SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:348$573'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$572'.
+Creating decoders for process `\SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:305$571'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$570'.
+Creating decoders for process `\SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:269$569'.
+Creating decoders for process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:53$802'.
+Creating decoders for process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797'.
+     1/2: $0\fall[0:0]
+     2/2: $0\rise[0:0]
+Creating decoders for process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:80$793'.
+     1/1: $0\state[0:0]
+Creating decoders for process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:70$789'.
+     1/1: $0\cnt[3:0]
+Creating decoders for process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:60$781'.
+     1/2: $2\cnt_move[3:0]
+     2/2: $1\cnt_move[3:0]
+Creating decoders for process `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$644'.
+Creating decoders for process `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$640'.
+Creating decoders for process `\SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1290$634'.
+     1/1: $0\Q[0:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:380$19'.
+     1/1: $0\cnt_reset[7:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14'.
+     1/1: $0\boot_sel[1:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:231$13'.
+     1/1: $0\boot_now_r[0:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:174$6'.
+     1/1: $0\timer[23:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:164$5'.
+     1/1: $0\state[2:0]
+Creating decoders for process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:123$1'.
+     1/6: $6\state_nxt[2:0]
+     2/6: $5\state_nxt[2:0]
+     3/6: $4\state_nxt[2:0]
+     4/6: $3\state_nxt[2:0]
+     5/6: $2\state_nxt[2:0]
+     6/6: $1\state_nxt[2:0]
+
+23.3.7. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\cnt_move' from process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:60$781'.
+No latch inferred for signal `\top.\state_nxt' from process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:123$1'.
+
+23.3.8. Executing PROC_DFF pass (convert process syncs to FFs).
+Creating register for signal `\SB_DFFNER.\Q' using process `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630'.
+  created $adff cell `$procdff$938' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNESR.\Q' using process `\SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1159$623'.
+  created $dff cell `$procdff$939' with negative edge clock.
+Creating register for signal `\SB_DFFNS.\Q' using process `\SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1090$620'.
+  created $adff cell `$procdff$940' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNSS.\Q' using process `\SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1042$617'.
+  created $dff cell `$procdff$941' with negative edge clock.
+Creating register for signal `\SB_DFFNR.\Q' using process `\SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:973$614'.
+  created $adff cell `$procdff$942' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNSR.\Q' using process `\SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:925$611'.
+  created $dff cell `$procdff$943' with negative edge clock.
+Creating register for signal `\SB_DFFNE.\Q' using process `\SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:882$609'.
+  created $dff cell `$procdff$944' with negative edge clock.
+Creating register for signal `\SB_DFFN.\Q' using process `\SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:846$607'.
+  created $dff cell `$procdff$945' with negative edge clock.
+Creating register for signal `\SB_DFFES.\Q' using process `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603'.
+  created $adff cell `$procdff$946' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFESS.\Q' using process `\SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:713$596'.
+  created $dff cell `$procdff$947' with positive edge clock.
+Creating register for signal `\SB_DFFER.\Q' using process `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592'.
+  created $adff cell `$procdff$948' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFESR.\Q' using process `\SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:582$585'.
+  created $dff cell `$procdff$949' with positive edge clock.
+Creating register for signal `\SB_DFFS.\Q' using process `\SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:513$582'.
+  created $adff cell `$procdff$950' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFSS.\Q' using process `\SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:465$579'.
+  created $dff cell `$procdff$951' with positive edge clock.
+Creating register for signal `\SB_DFFR.\Q' using process `\SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:396$576'.
+  created $adff cell `$procdff$952' with positive edge clock and positive level reset.
+Creating register for signal `\SB_DFFSR.\Q' using process `\SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:348$573'.
+  created $dff cell `$procdff$953' with positive edge clock.
+Creating register for signal `\SB_DFFE.\Q' using process `\SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:305$571'.
+  created $dff cell `$procdff$954' with positive edge clock.
+Creating register for signal `\SB_DFF.\Q' using process `\SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:269$569'.
+  created $dff cell `$procdff$955' with positive edge clock.
+Creating register for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\sync' using process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:53$802'.
+  created $dff cell `$procdff$956' with positive edge clock.
+Creating register for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\rise' using process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797'.
+  created $dff cell `$procdff$957' with positive edge clock.
+Creating register for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\fall' using process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797'.
+  created $dff cell `$procdff$958' with positive edge clock.
+Creating register for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\state' using process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:80$793'.
+  created $dff cell `$procdff$959' with positive edge clock.
+Creating register for signal `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.\cnt' using process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:70$789'.
+  created $dff cell `$procdff$960' with positive edge clock.
+Creating register for signal `\SB_DFFNES.\Q' using process `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641'.
+  created $adff cell `$procdff$961' with negative edge clock and positive level reset.
+Creating register for signal `\SB_DFFNESS.\Q' using process `\SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1290$634'.
+  created $dff cell `$procdff$962' with negative edge clock.
+Creating register for signal `\top.\cnt_reset' using process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:380$19'.
+  created $dff cell `$procdff$963' with positive edge clock.
+Creating register for signal `\top.\boot_sel' using process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14'.
+  created $adff cell `$procdff$964' with positive edge clock and positive level reset.
+Creating register for signal `\top.\boot_now_r' using process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:231$13'.
+  created $adff cell `$procdff$965' with positive edge clock and positive level reset.
+Creating register for signal `\top.\timer' using process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:174$6'.
+  created $dff cell `$procdff$966' with positive edge clock.
+Creating register for signal `\top.\state' using process `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:164$5'.
+  created $adff cell `$procdff$967' with positive edge clock and positive level reset.
+
+23.3.9. Executing PROC_MEMWR pass (convert process memory writes to cells).
+
+23.3.10. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+Removing empty process `SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$633'.
+Found and cleaned up 1 empty switch in `\SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630'.
+Removing empty process `SB_DFFNER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1215$630'.
+Removing empty process `SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$629'.
+Found and cleaned up 2 empty switches in `\SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1159$623'.
+Removing empty process `SB_DFFNESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1159$623'.
+Removing empty process `SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$622'.
+Removing empty process `SB_DFFNS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1090$620'.
+Removing empty process `SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$619'.
+Found and cleaned up 1 empty switch in `\SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1042$617'.
+Removing empty process `SB_DFFNSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1042$617'.
+Removing empty process `SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$616'.
+Removing empty process `SB_DFFNR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:973$614'.
+Removing empty process `SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$613'.
+Found and cleaned up 1 empty switch in `\SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:925$611'.
+Removing empty process `SB_DFFNSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:925$611'.
+Removing empty process `SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$610'.
+Found and cleaned up 1 empty switch in `\SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:882$609'.
+Removing empty process `SB_DFFNE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:882$609'.
+Removing empty process `SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$608'.
+Removing empty process `SB_DFFN.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:846$607'.
+Removing empty process `SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$606'.
+Found and cleaned up 1 empty switch in `\SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603'.
+Removing empty process `SB_DFFES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:769$603'.
+Removing empty process `SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$602'.
+Found and cleaned up 2 empty switches in `\SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:713$596'.
+Removing empty process `SB_DFFESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:713$596'.
+Removing empty process `SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$595'.
+Found and cleaned up 1 empty switch in `\SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592'.
+Removing empty process `SB_DFFER.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:638$592'.
+Removing empty process `SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$591'.
+Found and cleaned up 2 empty switches in `\SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:582$585'.
+Removing empty process `SB_DFFESR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:582$585'.
+Removing empty process `SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$584'.
+Removing empty process `SB_DFFS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:513$582'.
+Removing empty process `SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$581'.
+Found and cleaned up 1 empty switch in `\SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:465$579'.
+Removing empty process `SB_DFFSS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:465$579'.
+Removing empty process `SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$578'.
+Removing empty process `SB_DFFR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:396$576'.
+Removing empty process `SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$575'.
+Found and cleaned up 1 empty switch in `\SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:348$573'.
+Removing empty process `SB_DFFSR.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:348$573'.
+Removing empty process `SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$572'.
+Found and cleaned up 1 empty switch in `\SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:305$571'.
+Removing empty process `SB_DFFE.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:305$571'.
+Removing empty process `SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$570'.
+Removing empty process `SB_DFF.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:269$569'.
+Removing empty process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:53$802'.
+Found and cleaned up 1 empty switch in `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797'.
+Removing empty process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:95$797'.
+Found and cleaned up 3 empty switches in `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:80$793'.
+Removing empty process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:80$793'.
+Found and cleaned up 1 empty switch in `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:70$789'.
+Removing empty process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:70$789'.
+Found and cleaned up 2 empty switches in `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:60$781'.
+Removing empty process `$paramod\glitch_filter\L=s32'00000000000000000000000000000100.$proc$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:60$781'.
+Removing empty process `SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$644'.
+Found and cleaned up 1 empty switch in `\SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641'.
+Removing empty process `SB_DFFNES.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1346$641'.
+Removing empty process `SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:0$640'.
+Found and cleaned up 2 empty switches in `\SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1290$634'.
+Removing empty process `SB_DFFNESS.$proc$/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_sim.v:1290$634'.
+Found and cleaned up 1 empty switch in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:380$19'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:380$19'.
+Found and cleaned up 2 empty switches in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:238$14'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:231$13'.
+Found and cleaned up 1 empty switch in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:174$6'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:174$6'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:164$5'.
+Found and cleaned up 6 empty switches in `\top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:123$1'.
+Removing empty process `top.$proc$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:123$1'.
+Cleaned up 35 empty switches.
+
+23.3.11. Executing OPT_EXPR pass (perform const folding).
+Optimizing module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+<suppressed ~6 debug messages>
+Optimizing module top.
+<suppressed ~9 debug messages>
+
+23.4. Executing FLATTEN pass (flatten design).
+Deleting now unused module $paramod\glitch_filter\L=s32'00000000000000000000000000000100.
+<suppressed ~1 debug messages>
+
+23.5. Executing TRIBUF pass.
+
+23.6. Executing DEMINOUT pass (demote inout ports to input or output).
+
+23.7. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~2 debug messages>
+
+23.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 5 unused cells and 65 unused wires.
+<suppressed ~12 debug messages>
+
+23.9. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Warning: Wire top.\fl_skip_lock is used but has no driver.
+Found and reported 1 problems.
+
+23.10. Executing OPT pass (performing simple optimizations).
+
+23.10.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.10.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~30 debug messages>
+Removed a total of 10 cells.
+
+23.10.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+      Replacing known input bits on port B of cell $procmux$874: \cnt_reset -> { 1'1 \cnt_reset [6:0] }
+  Analyzing evaluation results.
+    dead port 1/2 on $mux $flatten\btn_flt_I.$procmux$862.
+    dead port 2/2 on $mux $procmux$889.
+    dead port 2/2 on $mux $procmux$897.
+    dead port 1/2 on $mux $procmux$907.
+    dead port 2/2 on $mux $procmux$909.
+    dead port 2/2 on $mux $procmux$918.
+    dead port 2/2 on $mux $procmux$928.
+Removed 7 multiplexer ports.
+<suppressed ~7 debug messages>
+
+23.10.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.10.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.10.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.10.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 17 unused wires.
+<suppressed ~1 debug messages>
+
+23.10.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.10.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.10.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~7 debug messages>
+
+23.10.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.10.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.10.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.10.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.10.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.10.16. Finished OPT passes. (There is nothing left to do.)
+
+23.11. Executing FSM pass (extract and optimize FSM).
+
+23.11.1. Executing FSM_DETECT pass (finding FSMs in design).
+Found FSM state register top.state.
+
+23.11.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+Extracting FSM `\state' from module `\top'.
+  found $adff cell for state register: $procdff$967
+  root of input selection tree: \state_nxt
+  found reset state: 3'000 (from async reset)
+  found ctrl input: $procmux$890_CMP
+  found ctrl input: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:181$10_Y
+  found ctrl input: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:244$16_Y
+  found ctrl input: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:242$15_Y
+  found ctrl input: $procmux$937_CMP
+  found state code: 3'101
+  found ctrl input: \timer_tick
+  found state code: 3'010
+  found ctrl input: \btn_flt_I.fall
+  found ctrl input: \fl_skip_lock
+  found state code: 3'100
+  found state code: 3'011
+  found ctrl input: \btn_flt_I.state
+  found state code: 3'001
+  found ctrl output: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:181$10_Y
+  found ctrl output: \boot_now
+  found ctrl output: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:242$15_Y
+  found ctrl output: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:244$16_Y
+  found ctrl output: $procmux$890_CMP
+  found ctrl output: $procmux$937_CMP
+  ctrl inputs: { \btn_flt_I.state \btn_flt_I.fall \timer_tick \fl_skip_lock }
+  ctrl outputs: { $procmux$937_CMP $procmux$890_CMP $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:244$16_Y $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:242$15_Y $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:181$10_Y \boot_now \state_nxt }
+  transition:      3'000 4'0--- ->      3'001 9'100000001
+  transition:      3'000 4'1--- ->      3'100 9'100000100
+  transition:      3'100 4'---- ->      3'101 9'010000101
+  transition:      3'010 4'-00- ->      3'010 9'001000010
+  transition:      3'010 4'-010 ->      3'100 9'001000100
+  transition:      3'010 4'-011 ->      3'101 9'001000101
+  transition:      3'010 4'-1-- ->      3'011 9'001000011
+  transition:      3'001 4'0--- ->      3'001 9'000100001
+  transition:      3'001 4'1--- ->      3'011 9'000100011
+  transition:      3'101 4'---- ->      3'101 9'000001101
+  transition:      3'011 4'--0- ->      3'011 9'000010011
+  transition:      3'011 4'--1- ->      3'010 9'000010010
+
+23.11.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$968' from module `\top'.
+
+23.11.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 14 unused cells and 14 unused wires.
+<suppressed ~15 debug messages>
+
+23.11.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+Optimizing FSM `$fsm$\state$968' from module `\top'.
+  Removing unused output signal \state_nxt [0].
+  Removing unused output signal \state_nxt [1].
+  Removing unused output signal \state_nxt [2].
+  Removing unused output signal $procmux$890_CMP.
+  Removing unused output signal $procmux$937_CMP.
+
+23.11.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+Recoding FSM `$fsm$\state$968' from module `\top' using `auto' encoding:
+  mapping auto encoding to `one-hot` for this FSM.
+  000 -> -----1
+  100 -> ----1-
+  010 -> ---1--
+  001 -> --1---
+  101 -> -1----
+  011 -> 1-----
+
+23.11.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+
+FSM `$fsm$\state$968' from module `top':
+-------------------------------------
+
+  Information on FSM $fsm$\state$968 (\state):
+
+  Number of input signals:    4
+  Number of output signals:   4
+  Number of state bits:       6
+
+  Input signals:
+    0: \fl_skip_lock
+    1: \timer_tick
+    2: \btn_flt_I.fall
+    3: \btn_flt_I.state
+
+  Output signals:
+    0: \boot_now
+    1: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:181$10_Y
+    2: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:242$15_Y
+    3: $eq$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:244$16_Y
+
+  State encoding:
+    0:   6'-----1  <RESET STATE>
+    1:   6'----1-
+    2:   6'---1--
+    3:   6'--1---
+    4:   6'-1----
+    5:   6'1-----
+
+  Transition Table (state_in, ctrl_in, state_out, ctrl_out):
+      0:     0 4'1---   ->     1 4'0000
+      1:     0 4'0---   ->     3 4'0000
+      2:     1 4'----   ->     4 4'0000
+      3:     2 4'-010   ->     1 4'1000
+      4:     2 4'-00-   ->     2 4'1000
+      5:     2 4'-011   ->     4 4'1000
+      6:     2 4'-1--   ->     5 4'1000
+      7:     3 4'0---   ->     3 4'0100
+      8:     3 4'1---   ->     5 4'0100
+      9:     4 4'----   ->     4 4'0001
+     10:     5 4'--1-   ->     2 4'0010
+     11:     5 4'--0-   ->     5 4'0010
+
+-------------------------------------
+
+23.11.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+Mapping FSM `$fsm$\state$968' from module `\top'.
+
+23.12. Executing OPT pass (performing simple optimizations).
+
+23.12.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~7 debug messages>
+
+23.12.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~3 debug messages>
+Removed a total of 1 cells.
+
+23.12.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~6 debug messages>
+
+23.12.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.12.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.12.6. Executing OPT_DFF pass (perform DFF optimizations).
+Adding SRST signal on $procdff$966 ($dff) from module top (D = $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7_Y [23:0], Q = \timer, rval = 24'000000000000000000000000).
+Adding EN signal on $procdff$964 ($adff) from module top (D = $0\boot_sel[1:0], Q = \boot_sel).
+Adding SRST signal on $procdff$963 ($dff) from module top (D = $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21_Y [7], Q = \cnt_reset [7], rval = 1'1).
+Adding EN signal on $procdff$963 ($dff) from module top (D = $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21_Y [6:0], Q = \cnt_reset [6:0]).
+Adding SRST signal on $flatten\btn_flt_I.$procdff$959 ($dff) from module top (D = $flatten\btn_flt_I.$procmux$847_Y, Q = \btn_flt_I.state, rval = 1'0).
+Adding EN signal on $auto$opt_dff.cc:731:run$1028 ($sdff) from module top (D = 1'1, Q = \btn_flt_I.state).
+
+23.12.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 4 unused cells and 17 unused wires.
+<suppressed ~6 debug messages>
+
+23.12.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~1 debug messages>
+
+23.12.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.12.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+23.12.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.12.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.12.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.12.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.12.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.12.16. Finished OPT passes. (There is nothing left to do.)
+
+23.13. Executing WREDUCE pass (reducing word size of cells).
+Removed top 1 bits (of 3) from port B of cell top.$auto$fsm_map.cc:77:implement_pattern_cache$981 ($eq).
+Removed top 31 bits (of 32) from port B of cell top.$add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7 ($add).
+Removed top 8 bits (of 32) from port Y of cell top.$add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7 ($add).
+Removed top 31 bits (of 32) from port B of cell top.$add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21 ($add).
+Removed top 24 bits (of 32) from port Y of cell top.$add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21 ($add).
+Removed cell top.$procmux$876 ($mux).
+Removed top 1 bits (of 3) from port B of cell top.$auto$fsm_map.cc:77:implement_pattern_cache$1005 ($eq).
+Removed top 8 bits (of 32) from wire top.$add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7_Y.
+
+23.14. Executing PEEPOPT pass (run peephole optimizers).
+
+23.15. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 2 unused wires.
+<suppressed ~1 debug messages>
+
+23.16. Executing SHARE pass (SAT-based resource sharing).
+
+23.17. Executing TECHMAP pass (map to technology primitives).
+
+23.17.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/cmp2lut.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/cmp2lut.v' to AST representation.
+Generating RTLIL representation for module `\_90_lut_cmp_'.
+Successfully finished Verilog frontend.
+
+23.17.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~6 debug messages>
+
+23.18. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.19. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.20. Executing ALUMACC pass (create $alu and $macc cells).
+Extracting $alu and $macc cells in module top:
+  creating $macc model for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7 ($add).
+  creating $macc model for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:245$17 ($add).
+  creating $macc model for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21 ($add).
+  creating $macc model for $flatten\btn_flt_I.$add$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:74$790 ($add).
+  creating $alu model for $macc $flatten\btn_flt_I.$add$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:74$790.
+  creating $alu model for $macc $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21.
+  creating $alu model for $macc $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:245$17.
+  creating $alu model for $macc $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7.
+  creating $alu cell for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:178$7: $auto$alumacc.cc:485:replace_alu$1032
+  creating $alu cell for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:245$17: $auto$alumacc.cc:485:replace_alu$1035
+  creating $alu cell for $add$/Users/roshenramnarine/no2bootloader/gateware/ice40-stub/rtl/top.v:382$21: $auto$alumacc.cc:485:replace_alu$1038
+  creating $alu cell for $flatten\btn_flt_I.$add$/Users/roshenramnarine/no2bootloader/gateware/cores/no2misc//rtl/glitch_filter.v:74$790: $auto$alumacc.cc:485:replace_alu$1041
+  created 4 $alu and 0 $macc cells.
+
+23.21. Executing OPT pass (performing simple optimizations).
+
+23.21.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.21.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.21.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+23.21.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.21.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.21.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.21.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.21.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.21.9. Finished OPT passes. (There is nothing left to do.)
+
+23.22. Executing MEMORY pass.
+
+23.22.1. Executing OPT_MEM pass (optimize memories).
+Performed a total of 0 transformations.
+
+23.22.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+Performed a total of 0 transformations.
+
+23.22.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+
+23.22.4. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+
+23.22.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.22.6. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+
+23.22.7. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+Performed a total of 0 transformations.
+
+23.22.8. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.22.9. Executing MEMORY_COLLECT pass (generating $mem cells).
+
+23.23. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.24. Executing MEMORY_BRAM pass (mapping $mem cells to block memories).
+
+23.25. Executing TECHMAP pass (map to technology primitives).
+
+23.25.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/brams_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/brams_map.v' to AST representation.
+Generating RTLIL representation for module `\$__ICE40_RAM4K'.
+Generating RTLIL representation for module `\$__ICE40_RAM4K_M0'.
+Generating RTLIL representation for module `\$__ICE40_RAM4K_M123'.
+Successfully finished Verilog frontend.
+
+23.25.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~5 debug messages>
+
+23.26. Executing ICE40_BRAMINIT pass.
+
+23.27. Executing OPT pass (performing simple optimizations).
+
+23.27.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~1 debug messages>
+
+23.27.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.27.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.27.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.27.5. Finished fast OPT passes.
+
+23.28. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+
+23.29. Executing OPT pass (performing simple optimizations).
+
+23.29.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.29.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.29.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+23.29.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $flatten\btn_flt_I.$procmux$859:
+      Old ports: A=4'0000, B=4'1111, Y=$flatten\btn_flt_I.$2\cnt_move[3:0]
+      New ports: A=1'0, B=1'1, Y=$flatten\btn_flt_I.$2\cnt_move[3:0] [0]
+      New connections: $flatten\btn_flt_I.$2\cnt_move[3:0] [3:1] = { $flatten\btn_flt_I.$2\cnt_move[3:0] [0] $flatten\btn_flt_I.$2\cnt_move[3:0] [0] $flatten\btn_flt_I.$2\cnt_move[3:0] [0] }
+  Optimizing cells in module \top.
+    Consolidated identical input bits for $mux cell $flatten\btn_flt_I.$procmux$865:
+      Old ports: A=$flatten\btn_flt_I.$2\cnt_move[3:0], B=4'0001, Y=\btn_flt_I.cnt_move
+      New ports: A={ $flatten\btn_flt_I.$2\cnt_move[3:0] [0] $flatten\btn_flt_I.$2\cnt_move[3:0] [0] }, B=2'01, Y=\btn_flt_I.cnt_move [1:0]
+      New connections: \btn_flt_I.cnt_move [3:2] = { \btn_flt_I.cnt_move [1] \btn_flt_I.cnt_move [1] }
+  Optimizing cells in module \top.
+Performed a total of 2 changes.
+
+23.29.5. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.29.6. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.29.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.29.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.29.9. Rerunning OPT passes. (Maybe there is more to do..)
+
+23.29.10. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+Running muxtree optimizer on module \top..
+  Creating internal representation of mux trees.
+  Evaluating internal representation of mux trees.
+  Analyzing evaluation results.
+Removed 0 multiplexer ports.
+<suppressed ~3 debug messages>
+
+23.29.11. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+  Optimizing cells in module \top.
+Performed a total of 0 changes.
+
+23.29.12. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.29.13. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.29.14. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.29.15. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.29.16. Finished OPT passes. (There is nothing left to do.)
+
+23.30. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+23.31. Executing TECHMAP pass (map to technology primitives).
+
+23.31.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/techmap.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/techmap.v' to AST representation.
+Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
+Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
+Generating RTLIL representation for module `\_90_simplemap_logic_ops'.
+Generating RTLIL representation for module `\_90_simplemap_compare_ops'.
+Generating RTLIL representation for module `\_90_simplemap_various'.
+Generating RTLIL representation for module `\_90_simplemap_registers'.
+Generating RTLIL representation for module `\_90_shift_ops_shr_shl_sshl_sshr'.
+Generating RTLIL representation for module `\_90_shift_shiftx'.
+Generating RTLIL representation for module `\_90_fa'.
+Generating RTLIL representation for module `\_90_lcu'.
+Generating RTLIL representation for module `\_90_alu'.
+Generating RTLIL representation for module `\_90_macc'.
+Generating RTLIL representation for module `\_90_alumacc'.
+Generating RTLIL representation for module `\$__div_mod_u'.
+Generating RTLIL representation for module `\$__div_mod_trunc'.
+Generating RTLIL representation for module `\_90_div'.
+Generating RTLIL representation for module `\_90_mod'.
+Generating RTLIL representation for module `\$__div_mod_floor'.
+Generating RTLIL representation for module `\_90_divfloor'.
+Generating RTLIL representation for module `\_90_modfloor'.
+Generating RTLIL representation for module `\_90_pow'.
+Generating RTLIL representation for module `\_90_pmux'.
+Generating RTLIL representation for module `\_90_lut'.
+Successfully finished Verilog frontend.
+
+23.31.2. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/arith_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/arith_map.v' to AST representation.
+Generating RTLIL representation for module `\_80_ice40_alu'.
+Successfully finished Verilog frontend.
+
+23.31.3. Continuing TECHMAP pass.
+Using extmapper simplemap for cells of type $eq.
+Using extmapper simplemap for cells of type $and.
+Using extmapper simplemap for cells of type $reduce_or.
+Using template $paramod$175e67c02b86e96b1288b9dc100122520d7240d8\_90_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $sdff.
+Using extmapper simplemap for cells of type $or.
+Using extmapper simplemap for cells of type $mux.
+Using extmapper simplemap for cells of type $not.
+Using template $paramod$c3cd1564c35d873179656addd6052d7ea8b6d991\_80_ice40_alu for cells of type $alu.
+Using template $paramod$740b056ede97228d3eae64ea2fdc81f0a33e0fe7\_80_ice40_alu for cells of type $alu.
+Using template $paramod$79aa992f2eb7f354d4aaf651790713cf239111fa\_80_ice40_alu for cells of type $alu.
+Using extmapper simplemap for cells of type $adff.
+Using extmapper simplemap for cells of type $dffe.
+Using extmapper simplemap for cells of type $adffe.
+Using extmapper simplemap for cells of type $dff.
+Using extmapper simplemap for cells of type $logic_not.
+Using extmapper simplemap for cells of type $reduce_bool.
+Using extmapper simplemap for cells of type $sdffe.
+Using extmapper simplemap for cells of type $xor.
+Using template $paramod\_90_lcu\WIDTH=32'00000000000000000000000000000010 for cells of type $lcu.
+Using extmapper simplemap for cells of type $pos.
+No more expansions possible.
+<suppressed ~338 debug messages>
+
+23.32. Executing OPT pass (performing simple optimizations).
+
+23.32.1. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~92 debug messages>
+
+23.32.2. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~33 debug messages>
+Removed a total of 11 cells.
+
+23.32.3. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.32.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 39 unused cells and 99 unused wires.
+<suppressed ~40 debug messages>
+
+23.32.5. Finished fast OPT passes.
+
+23.33. Executing ICE40_OPT pass (performing simple optimizations).
+
+23.33.1. Running ICE40 specific optimizations.
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$1032.slice[0].carry: CO=\timer [0]
+Optimized $__ICE40_CARRY_WRAPPER cell back to logic (without SB_CARRY) top.$auto$alumacc.cc:485:replace_alu$1038.slice[0].carry: CO=\cnt_reset [0]
+
+23.33.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.33.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.33.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.33.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.33.6. Rerunning OPT passes. (Removed registers in this run.)
+
+23.33.7. Running ICE40 specific optimizations.
+
+23.33.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.33.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.33.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.33.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.33.12. Finished OPT passes. (There is nothing left to do.)
+
+23.34. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+
+23.35. Executing TECHMAP pass (map to technology primitives).
+
+23.35.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+23.35.2. Continuing TECHMAP pass.
+Using template \$_SDFF_PP0_ for cells of type $_SDFF_PP0_.
+Using template \$_DFFE_PP_ for cells of type $_DFFE_PP_.
+Using template \$_DFF_PP1_ for cells of type $_DFF_PP1_.
+Using template \$_DFF_PP0_ for cells of type $_DFF_PP0_.
+Using template \$_DFF_P_ for cells of type $_DFF_P_.
+Using template \$_SDFF_PP1_ for cells of type $_SDFF_PP1_.
+No more expansions possible.
+<suppressed ~71 debug messages>
+
+23.36. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.37. Executing SIMPLEMAP pass (map simple cells to gate primitives).
+Mapping top.$auto$alumacc.cc:485:replace_alu$1032.slice[0].carry ($lut).
+Mapping top.$auto$alumacc.cc:485:replace_alu$1038.slice[0].carry ($lut).
+
+23.38. Executing ICE40_OPT pass (performing simple optimizations).
+
+23.38.1. Running ICE40 specific optimizations.
+
+23.38.2. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+<suppressed ~31 debug messages>
+
+23.38.3. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+<suppressed ~45 debug messages>
+Removed a total of 15 cells.
+
+23.38.4. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.38.5. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+Removed 0 unused cells and 261 unused wires.
+<suppressed ~1 debug messages>
+
+23.38.6. Rerunning OPT passes. (Removed registers in this run.)
+
+23.38.7. Running ICE40 specific optimizations.
+
+23.38.8. Executing OPT_EXPR pass (perform const folding).
+Optimizing module top.
+
+23.38.9. Executing OPT_MERGE pass (detect identical cells).
+Finding identical cells in module `\top'.
+Removed a total of 0 cells.
+
+23.38.10. Executing OPT_DFF pass (perform DFF optimizations).
+
+23.38.11. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \top..
+
+23.38.12. Finished OPT passes. (There is nothing left to do.)
+
+23.39. Executing TECHMAP pass (map to technology primitives).
+
+23.39.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/latches_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/latches_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DLATCH_N_'.
+Generating RTLIL representation for module `\$_DLATCH_P_'.
+Successfully finished Verilog frontend.
+
+23.39.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~4 debug messages>
+
+23.40. Executing ABC pass (technology mapping using ABC).
+
+23.40.1. Extracting gate netlist of module `\top' to `<abc-temp-dir>/input.blif'..
+Extracted 54 gates and 75 wires to a netlist network with 20 inputs and 15 outputs.
+
+23.40.1.1. Executing ABC.
+Running ABC command: <yosys-exe-dir>/yosys-abc -s -f <abc-temp-dir>/abc.script 2>&1
+ABC: ABC command line: "source <abc-temp-dir>/abc.script".
+ABC: 
+ABC: + read_blif <abc-temp-dir>/input.blif 
+ABC: + read_lut <abc-temp-dir>/lutdefs.txt 
+ABC: + strash 
+ABC: + ifraig 
+ABC: + scorr 
+ABC: Warning: The network is combinational (run "fraig" or "fraig_sweep").
+ABC: + dc2 
+ABC: + dretime 
+ABC: + strash 
+ABC: + dch -f 
+ABC: + if 
+ABC: + mfs2 
+ABC: + lutpack -S 1 
+ABC: + dress 
+ABC: Total number of equiv classes                =      19.
+ABC: Participating nodes from both networks       =      41.
+ABC: Participating nodes from the first network   =      18. (  81.82 % of nodes)
+ABC: Participating nodes from the second network  =      23. ( 104.55 % of nodes)
+ABC: Node pairs (any polarity)                    =      18. (  81.82 % of names can be moved)
+ABC: Node pairs (same polarity)                   =      18. (  81.82 % of names can be moved)
+ABC: Total runtime =     0.00 sec
+ABC: + write_blif <abc-temp-dir>/output.blif 
+
+23.40.1.2. Re-integrating ABC results.
+ABC RESULTS:              $lut cells:       21
+ABC RESULTS:        internal signals:       40
+ABC RESULTS:           input signals:       20
+ABC RESULTS:          output signals:       15
+Removing temp directory.
+
+23.41. Executing ICE40_WRAPCARRY pass (wrap carries).
+
+23.42. Executing TECHMAP pass (map to technology primitives).
+
+23.42.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/ff_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/ff_map.v' to AST representation.
+Generating RTLIL representation for module `\$_DFF_N_'.
+Generating RTLIL representation for module `\$_DFF_P_'.
+Generating RTLIL representation for module `\$_DFFE_NP_'.
+Generating RTLIL representation for module `\$_DFFE_PP_'.
+Generating RTLIL representation for module `\$_DFF_NP0_'.
+Generating RTLIL representation for module `\$_DFF_NP1_'.
+Generating RTLIL representation for module `\$_DFF_PP0_'.
+Generating RTLIL representation for module `\$_DFF_PP1_'.
+Generating RTLIL representation for module `\$_DFFE_NP0P_'.
+Generating RTLIL representation for module `\$_DFFE_NP1P_'.
+Generating RTLIL representation for module `\$_DFFE_PP0P_'.
+Generating RTLIL representation for module `\$_DFFE_PP1P_'.
+Generating RTLIL representation for module `\$_SDFF_NP0_'.
+Generating RTLIL representation for module `\$_SDFF_NP1_'.
+Generating RTLIL representation for module `\$_SDFF_PP0_'.
+Generating RTLIL representation for module `\$_SDFF_PP1_'.
+Generating RTLIL representation for module `\$_SDFFCE_NP0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_NP1P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP0P_'.
+Generating RTLIL representation for module `\$_SDFFCE_PP1P_'.
+Successfully finished Verilog frontend.
+
+23.42.2. Continuing TECHMAP pass.
+No more expansions possible.
+<suppressed ~22 debug messages>
+Removed 3 unused cells and 71 unused wires.
+
+23.43. Executing OPT_LUT pass (optimize LUTs).
+Discovering LUTs.
+Number of LUTs:       55
+  1-LUT                3
+  2-LUT                8
+  3-LUT               36
+  4-LUT                8
+  with \SB_CARRY    (#0)   31
+  with \SB_CARRY    (#1)   31
+
+Eliminating LUTs.
+Number of LUTs:       55
+  1-LUT                3
+  2-LUT                8
+  3-LUT               36
+  4-LUT                8
+  with \SB_CARRY    (#0)   31
+  with \SB_CARRY    (#1)   31
+
+Combining LUTs.
+Number of LUTs:       55
+  1-LUT                3
+  2-LUT                8
+  3-LUT               36
+  4-LUT                8
+  with \SB_CARRY    (#0)   31
+  with \SB_CARRY    (#1)   31
+
+Eliminated 0 LUTs.
+Combined 0 LUTs.
+<suppressed ~198 debug messages>
+
+23.44. Executing TECHMAP pass (map to technology primitives).
+
+23.44.1. Executing Verilog-2005 frontend: /Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_map.v
+Parsing Verilog input from `/Users/roshenramnarine/fpga-toolchain/bin/../share/yosys/ice40/cells_map.v' to AST representation.
+Generating RTLIL representation for module `\$lut'.
+Successfully finished Verilog frontend.
+
+23.44.2. Continuing TECHMAP pass.
+Using template $paramod$658b9ed803f0d3d335616d3858b53e0a2522f1e8\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0001 for cells of type $lut.
+Using template $paramod$fd904e9e35cfd343a9df248824bd3f1408724879\$lut for cells of type $lut.
+Using template $paramod$608f40069c27841a5b3bdf03643a34bdc8974072\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01001111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1000 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000001\LUT=2'01 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'01010011 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0111 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'0100 for cells of type $lut.
+Using template $paramod$70ebb6cf5bc7d63c5c1a98ccefefa2af79e8f2a9\$lut for cells of type $lut.
+Using template $paramod$f29ab3f487c3ac7aad5e05e3e8df05ec3af78511\$lut for cells of type $lut.
+Using template $paramod$c93083768903e88c37e0c9b82fead370b0886961\$lut for cells of type $lut.
+Using template $paramod$571404c0889eaf57f492cb5e37f8acb5df5852f9\$lut for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00110101 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000011\LUT=8'00001110 for cells of type $lut.
+Using template $paramod\$lut\WIDTH=32'00000000000000000000000000000010\LUT=4'1110 for cells of type $lut.
+Using template $paramod$7bb7cea918b21216db8b0d251f654e71dd172577\$lut for cells of type $lut.
+Using template $paramod$965f8f2fa1a796a6c51222eabb50fbd26e97d98b\$lut for cells of type $lut.
+No more expansions possible.
+<suppressed ~305 debug messages>
+Removed 0 unused cells and 110 unused wires.
+
+23.45. Executing AUTONAME pass.
+Renamed 714 objects in module top (11 iterations).
+<suppressed ~157 debug messages>
+
+23.46. Executing HIERARCHY pass (managing design hierarchy).
+
+23.46.1. Analyzing design hierarchy..
+Top module:  \top
+
+23.46.2. Analyzing design hierarchy..
+Top module:  \top
+Removed 0 unused modules.
+
+23.47. Printing statistics.
+
+=== top ===
+
+   Number of wires:                 54
+   Number of wire bits:            182
+   Number of public wires:          54
+   Number of public wire bits:     182
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                138
+     SB_CARRY                       31
+     SB_DFF                          7
+     SB_DFFE                         7
+     SB_DFFR                         7
+     SB_DFFS                         2
+     SB_DFFSR                       25
+     SB_DFFSS                        1
+     SB_HFOSC                        1
+     SB_IO                           1
+     SB_LUT4                        55
+     SB_WARMBOOT                     1
+
+23.48. Executing CHECK pass (checking for obvious problems).
+Checking module top...
+Found and reported 0 problems.
+
+23.49. Executing JSON backend.
+
+Warnings: 4 unique messages, 4 total
+End of script. Logfile hash: 4729db9c56, CPU: user 5.73s system 0.08s
+Yosys 0.10+12 (open-tool-forge build) (git sha1 356ec7bb, clang 11.0.3 )
+Time spent: 40% 33x read_verilog (2 sec), 11% 21x opt_clean (0 sec), ...

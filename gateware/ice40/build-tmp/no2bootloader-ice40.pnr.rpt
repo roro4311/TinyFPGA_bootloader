@@ -1,0 +1,11 @@
+Info: constrained 'spi_mosi' to bel 'X23/Y0/io0'
+Info: constrained 'spi_miso' to bel 'X23/Y0/io1'
+Info: constrained 'spi_clk' to bel 'X24/Y0/io0'
+Info: constrained 'spi_cs_n' to bel 'X24/Y0/io1'
+Info: constrained 'usb_dp' to bel 'X9/Y0/io1'
+Info: constrained 'usb_dn' to bel 'X9/Y0/io0'
+Info: constrained 'usb_pu' to bel 'X8/Y0/io0'
+Info: constrained 'btn' to bel 'X19/Y31/io1'
+ERROR: package does not have a pin named '2B' (on line 18)
+ERROR: Loading PCF failed.
+0 warnings, 2 errors
